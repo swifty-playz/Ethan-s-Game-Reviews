@@ -8,6 +8,7 @@ body {
 }
 
 header {
+  font-family: 'Courier New', monospace;
   background-color: #1f1f1f;
   padding: 2em;
   text-align: center;
@@ -44,4 +45,10 @@ footer {
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
+}
+
+p {
+  font-family: 'Courier New', monospace;
+  color: blue;
+  background-color: pink;
 }
