@@ -1,2 +1,2 @@
 # Swifty-Playz
-Aspiring gamedev here! Welcome to my page!
+Welcome to my page!
