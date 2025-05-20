@@ -52,3 +52,10 @@ p {
   color: blue;
   background-color: pink;
 }
+
+.no-border {
+  border: none;
+  background: none; /* optional: removes default gray background */
+  padding: 10px;     /* optional: adds space inside the button */
+  cursor: pointer;   /* makes the button look clickable */
+}
