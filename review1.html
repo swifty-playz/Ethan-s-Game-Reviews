@@ -5,10 +5,34 @@
     <title>Game Reviews</title>
   </head>
   <body>
-    <h1>Review 1</h1>
-    <p>Today's review will be about...!</p>
+    <div class="dropdown">
+      <button onclick="toggleMenu()" class="custom-button">Menu</button>
+      <div id="menuBox" class="dropdown-content">
+        <button onclick="location.href='index.html'" class="no-border">Main Page</button>
+        <button onclick="location.href='about.html'" class="no-border">About</button>
+        <button onclick="location.href='contact.html'" class="no-border">Contact</button>
+        <button onclick="location.href='top-games.html'" class="no-border">Top Games</button>
+        <button onclick="location.href='upcoming-games.html'" class="no-border">Upcoming Games</button>
+      </div>
+    </div>
+    <h1>Reviews</h1>
+    <h3>Yakuza 0</h3>
+    <p>The game Yakuza 0 developed by Ryu Ga Gotoku Studio and published by Sega is about two yakuza and their beginning steps into the way of yakuza life. 
+      My initial expectations for the game were really high, as I have played other Yakuza games prior, and I am glad to say that this game hit my expectations, if not even better! 
+      This game is placed in Japan in the area of Kamurocho and Sotenbori, and in both areas the player has many mini games to play and sub stories to complete once they have finished the main story or even during. 
+      This leaves the player to have a lot of fun constantly when playing with something always to do. 
+      The game's visuals, soundtrack, voice acting, and sound effects are all amazing. 
+      The game's main story is about 30+ hours long, but I'd guess that for 100% achievement completion, it'll take around 100 hours to do so. 
+      Overall, the story is immaculate, lots of the mini games are super fun, and the sub stories can be really entertaining; however, some of the mini games like "disco" are annoying to play with their mechanics and quickness to them in my opinion. 
+      I give the game a score of 9/10, with only some mini games bothering me from giving a perfect score, and would totally recommend to anyone interested in games placed in Japan, story rich, and lots of action!
+    </p>
     <h3>MINECRAFT</h3>
     <p>Minecraft originally developed by Markus "Notch" Persson...</p>
-    <button style="display:inline-block;" onclick="location.href='index.html'" class="no-border">Main Page</button>
   </body>
 </html>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>

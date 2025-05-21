@@ -5,9 +5,25 @@
     <title>Contact</title>
   </head>
   <body>
+    <div class="dropdown">
+      <button onclick="toggleMenu()" class="custom-button">Menu</button>
+      <div id="menuBox" class="dropdown-content">
+        <button onclick="location.href='index.html'" class="no-border">Main Page</button>
+        <button onclick="location.href='review1.html'" class="no-border">Reviews</button>
+        <button onclick="location.href='about.html'" class="no-border">About</button>
+        <button onclick="location.href='top-games.html'" class="no-border">Top Games</button>
+        <button onclick="location.href='upcoming-games.html'" class="no-border">Upcoming Games</button>
+      </div>
+    </div>
     <h1>Contact Me</h1>
-    <p>Phone Number - 760-755-3198</p>
-    <p>Email Address - ethansikes2007@icloud.com</p>
-    <button style="display:inline-block;" onclick="location.href='index.html'" class="no-border">Main Page</button>
+    <p>Phone Number - 760-755-3198<br>
+      Email Address - ethansikes2007@icloud.com
+    </p>
   </body>
 </html>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>

@@ -5,16 +5,41 @@
     <title>About</title>
   </head>
   <body>
-    <h2>About my Page</h2>
-    <p>This webpage was created as a assignment in my high school AP Computer Science Principles class.</p>
-    <p>I could of designed it in Google Slides, but I like a challenge so I coded all this in HTML and CSS.</p>
-    <p>I chose to make the page about video game reviews because video games are a big part of my life, so this made this project more enjoyable.</p>
+    <div class="dropdown">
+      <button onclick="toggleMenu()" class="custom-button">Menu</button>
+      <div id="menuBox" class="dropdown-content">
+        <button onclick="location.href='index.html'" class="no-border">Main Page</button>
+        <button onclick="location.href='review1.html'" class="no-border">Reviews</button>
+        <button onclick="location.href='contact.html'" class="no-border">Contact</button>
+        <button onclick="location.href='top-games.html'" class="no-border">Top Games</button>
+        <button onclick="location.href='upcoming-games.html'" class="no-border">Upcoming Games</button>
+      </div>
+    </div>
+    <h2>About My Page</h2>
+    <p>This webpage was created as a assignment in my high school AP Computer Science Principles class. 
+      I could of designed it in Google Slides, but I like a challenge so I coded all this in HTML and CSS. 
+      I chose to make the page about video game reviews because video games are a big part of my life, so this made this project more enjoyable.
+      My game reviews will vary from AAA to indie, linear-based to open world, single-player to multiplayer, and so on.
+      I will attempt to not add bias to my reviews, but I am human and I do have my own opinions, though I am open to other opinions; therefore, I will allow for comments on my reviews once I figure out how to do that, so you can give your own opinions on the game!
+      Also, there will be zero spoilers in my reviews, so you can read them without worrying about spoilers.
+      If you comment any spoilers on my reviews, then I will block your permission to comment on my reviews.
+    </p>
     <h2>About Me</h2>
-    <p>My name is Ethan Sikes, and I am a 18 year old high school student.</p>
-    <p>I enjoy coding and have been doing it since middle school.</p>
-    <p>My favorite language to code in is Python because of it's simplicity.</p>
-    <p>My favorite game engine to use is Godot because of it's simplicity.</p>
-    <p>After all, I'm just a simplisitic guy.</p>
-    <button style="display:inline-block;" onclick="location.href='index.html'" class="no-border">Main Page</button>
+    <p>My name is Ethan Sikes. 
+      I am a 18 year old high school student.
+      I'm half mexican and half white.
+      From Chula Vista, California.
+      I enjoy coding and have been doing it since middle school.
+      My favorite language to code in is Python because of it's simplicity.
+      My favorite game engine to use is Godot because of it's simplicity.
+      My favorite type of game to design are 2D pixel art games because of it's simplicity.
+      After all, I'm just a simplisitic guy.
+    </p>
   </body>
 </html>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>

@@ -5,15 +5,34 @@
     <title>Upcoming Games</title>
   </head>
   <body>
+    <div class="dropdown">
+      <button onclick="toggleMenu()" class="custom-button">Menu</button>
+      <div id="menuBox" class="dropdown-content">
+        <button onclick="location.href='index.html'" class="no-border">Main Page</button>
+        <button onclick="location.href='review1.html'" class="no-border">Reviews</button>
+        <button onclick="location.href='about.html'" class="no-border">About</button>
+        <button onclick="location.href='contact.html'" class="no-border">Contact</button>
+        <button onclick="location.href='top-games.html'" class="no-border">Top Games</button>
+      </div>
+    </div>
     <h1>Upcoming Games</h1>
     <h3>Grand Theft Auto VI</h3>
-    <p>...</p>
+    <p>Let's talk about this game right off the bat.
+      We are all super excited for this game to come out.
+      However, we all know this game will never come out.
+      Maybe in a century or two, but definitly not in our lifetime.
+    </p>
     <h3>Borderlands 4</h3>
     <p>...</p>
     <h3>Pokemon Legends: Z-A</h3>
     <p>...</p>
     <h3>Persona5: The Phantom X</h3>
     <p>...</p>
-    <button style="display:inline-block;" onclick="location.href='index.html'" class="no-border">Main Page</button>
   </body>
 </html>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>
