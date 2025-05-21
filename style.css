@@ -54,8 +54,9 @@ p {
 }
 
 .no-border {
-  border: none;
-  background: none; /* optional: removes default gray background */
+  font-family: 'Courier New', monospace;
+  border: #797b7a;
+  background: #797b7a; /* optional: removes default gray background */
   padding: 10px;     /* optional: adds space inside the button */
   cursor: pointer;   /* makes the button look clickable */
 }
