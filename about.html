@@ -37,11 +37,38 @@
       My favorite type of game to design are 2D pixel art games because of it's simplicity.
       After all, I'm just a simplisitic guy.
     </p>
+
+    <h4>What is my favorite game?</h4>
+
+    <input type="text" id="userInput" placeholder="Game name here">
+    <button onclick="showInput()">Submit</button>
+    <p id="output"></p>
+    <div id="image-container"></div>
+    
+
   </body>
 </html>
 
 <script>
   function toggleMenu() {
     document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>
+
+<script>
+  function showInput() {
+    const input = document.getElementById("userInput").value;
+    const image_url = "https://www.bing.com/th/id/OIP.sryfMdcofd7Pwn0OeNcVBQHaHa?w=234&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2";
+    // Create an image element
+    const img = document.createElement("img");
+    img.src = imageUrl;
+    img.alt = "Descriptive text for the image";
+    img.style.width = "300px"; // Optional: Set width
+    img.style.height = "auto"; // Optional: Maintain aspect ratio
+    document.getElementById("output").innerText = `You typed: ${input}`;
+    if (input == "Yakuza 0") {
+      // Append the image to the container
+      document.getElementById("image-container").appendChild(img);
+    }
   }
 </script>
