@@ -76,7 +76,7 @@ p {
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .dropdown-content button {
@@ -84,7 +84,7 @@ p {
   padding: 8px;
   margin: 5px 0;
   background-color: #797b7a;
-  border: none;
+  border-radius: 10px;
   cursor: pointer;
   text-align: middle;
   color: #eae8db;
@@ -99,6 +99,8 @@ p {
   background-color: #797b7a;
   color: #eae8db;
   border: none;
+  margin: 5px, 0;
+  border-radius: 10px;
   text-align: center;
   padding: 5px 10px;
   display: inline-block;
