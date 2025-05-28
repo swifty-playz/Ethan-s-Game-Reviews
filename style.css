@@ -146,3 +146,11 @@ img {
   width: 50%;
   height: 25%;
 }
+
+h6 {
+  font-family: 'Courier New', monospace;
+  color: #eae8db;
+  border-radius: 0px;
+  padding: 0px;
+  margin-top: 0px;
+}
