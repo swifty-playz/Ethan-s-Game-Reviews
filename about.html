@@ -26,7 +26,7 @@
       Also, there will be zero spoilers in my reviews, so you can read them without worrying about spoilers.
       If you comment any spoilers on my reviews, then I will block your permission to comment on my reviews.
     </p>
-    <img src="https://waylandstudentpress.com/wp-content/uploads/2022/01/cZUpxAUdfyGai1dBIeXkck7OpvBDwJKfeVkO5J3r-1.png" alt="My Profile Image" width="50%" height="auto">
+    <img src="https://waylandstudentpress.com/wp-content/uploads/2022/01/cZUpxAUdfyGai1dBIeXkck7OpvBDwJKfeVkO5J3r-1.png" alt="My Profile Image" width="25%" height="auto">
     <h1>About Me</h1>
     <p>My name is Ethan Sikes. 
       I am a 18 year old high school student.
@@ -41,10 +41,11 @@
       Their you will be able to see this webpage's code, and other coding projects!
     </p>
     <a href="https://github.com/swifty-playz/Ethan-s-Game-Reviews" target="_blank">
-      <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-25D10029A4AEC45F91626D0A9D762356-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="My Profile Image" width="50%" height="auto">
+      <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-25D10029A4AEC45F91626D0A9D762356-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="My Profile Image" width="25%" height="auto">
     </a>
 
     <h4 id="question">What is my favorite game?</h4>
+    <h6>Answers can be found throughout the webpage.</h6>
     <input type="text" id="userInput" placeholder="Game name here">
     <button onclick="showInput()">Submit</button>
     <p id="output"></p>
@@ -70,13 +71,13 @@
     // Create an image element
     const img = document.createElement("img");
     img.alt = "Descriptive text for the image";
-    img.style.width = "25%"; // Optional: Set width
+    img.style.width = "15%"; // Optional: Set width
     img.style.height = "auto"; // Optional: Maintain aspect ratio
     
     const question = document.getElementById("question");
     if (question_num == 1) {
       question.innerText = "What is my favorite game?";
-      if (input == "Yakuza 0") {
+      if (input == "Yakuza 6: The Song of Life" || input == "Yakuza 6") {
         const imageContainer = document.getElementById("image-container");
         imageContainer.innerHTML = ""; // ✅ Remove any existing image
         // Append the image to the container
@@ -94,7 +95,7 @@
       }
 
     } else if (question_num == 2) {
-      if (input == "Never") {
+      if (input == "Never" || input == "Not in a million years") {
         const imageContainer = document.getElementById("image-container");
         imageContainer.innerHTML = ""; // ✅ Remove any existing image
         // Append the image to the container
@@ -111,7 +112,23 @@
       }
 
     } else if (question_num == 3) {
-      if (input == "No") {
+      if (input == "No" || input == "Nope" || input == "Nah" || input == "Never will be") {
+        const imageContainer = document.getElementById("image-container");
+        imageContainer.innerHTML = ""; // ✅ Remove any existing image
+        // Append the image to the container
+        img.src = image1_url;
+        document.getElementById("image-container").appendChild(img);
+        question.innerText = "Am I Mexican?";
+        question_num = question_num + 1;
+      }
+      else {
+        const imageContainer = document.getElementById("image-container");
+        imageContainer.innerHTML = ""; // ✅ Remove any existing image
+        img.src = image2_url;
+        document.getElementById("image-container").appendChild(img);
+      }
+    } else if (question_num == 4) {
+      if (input == "Yes") {
         const imageContainer = document.getElementById("image-container");
         imageContainer.innerHTML = ""; // ✅ Remove any existing image
         // Append the image to the container
